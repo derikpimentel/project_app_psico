@@ -1,1 +1,2 @@
-# project_app_psico
+# Projeto do Aplicativo de Gestão ao Profissional de Psicologia
+Esse projeto nasceu através de um trabalho acadêmico, em que eu buscava uma ideia do que fazer e que fosse algo realmente nescessário. Conversando com a minha noiva, surgiu a ideia de criar um aplicativo que organiza-se a agenda de atendimentos dela, e que cuida-se de toda questão burocrática dos pagamentos. Então partindo dessa ideia, me motivei a realizar esse trabalho pensando em seu potêncial a longo prazo. Espero que ao final desse trabalho, eu consiga ser aprovado na matéria e que também consiga atingir o objetivo de ajudar minha noiva em sua profissão.
