@@ -4,15 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/btnPatients"
+        android:layout_width="152dp"
+        android:layout_height="151dp"
+        android:background="@drawable/patients_symbol"
+        app:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <Button
+        android:id="@+id/btnSchedule"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/schedule_symbol"
+        app:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <Button
+        android:id="@+id/btnChart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/chart_symbol"
+        app:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <Button
+        android:id="@+id/btnPayments"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/payment_symbol"
+        app:backgroundTint="@color/white"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <ImageView
+        android:id="@+id/imgName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/nome_mari"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvido por Derik B. Pimentel"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="758dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
