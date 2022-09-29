@@ -11,54 +11,88 @@
         android:id="@+id/btnPatients"
         android:layout_width="152dp"
         android:layout_height="151dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/patients_symbol"
         app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSchedule"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
         android:background="@drawable/schedule_symbol"
         app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPatients"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnChart"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="21dp"
         android:background="@drawable/chart_symbol"
         app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imgNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPatients" />
 
     <Button
         android:id="@+id/btnPayments"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="21dp"
         android:background="@drawable/payment_symbol"
         app:backgroundTint="@color/white"
-        tools:layout_editor_absoluteX="205dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imgNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnChart"
+        app:layout_constraintTop_toBottomOf="@+id/btnSchedule" />
 
     <ImageView
-        android:id="@+id/imgName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/nome_mari"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:id="@+id/imgNome"
+        android:layout_width="310dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="290dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/nome_mari" />
 
     <TextView
         android:id="@+id/textInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="254dp"
+        android:layout_marginLeft="254dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="11dp"
         android:text="Desenvolvido por Derik B. Pimentel"
         android:textColor="@color/white"
         android:textSize="8sp"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="758dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
